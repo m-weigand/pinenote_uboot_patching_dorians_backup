@@ -9,7 +9,7 @@ producing an u-boot image for the PineNote that
   partitions (the first one it finds it used for booting) by modifying the
   bootcmd command:
 
-    *bootcmd=run distro_bootcmd;
+      *bootcmd=run distro_bootcmd;
 
   This second step is accomplished by using the u-boot env patching script from
   https://gist.github.com/charasyn/206b2537534b6679b0961be64cf9c35f (user:
