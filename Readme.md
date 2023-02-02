@@ -1,7 +1,7 @@
 # Patching Dorian's u-boot image for extlinux.conf detection
 
 This repository contains a simple bash/python script that patches the patched
-uboot image from DoarianRudolph (https://github.com/DorianRudolph/pinenotes),
+uboot image from DorianRudolph (https://github.com/DorianRudolph/pinenotes),
 producing an u-boot image for the PineNote that
 
 * allows memory access to regions larger than 32 mb (patch by DorianRudolph)
