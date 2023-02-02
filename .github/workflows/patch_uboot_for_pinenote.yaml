@@ -1,0 +1,21 @@
+name: Patch Dorian's u-boot backup for extlinux.conf detection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build_images:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build
+      run: ./patch_it.sh
+
+    - name: Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: uboot_32mb_extlinux
+        path: uboot_32mb_extlinux.img
